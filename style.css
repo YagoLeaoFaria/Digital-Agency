@@ -151,6 +151,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-top: 32px;
 }
 
 #branding-title {
@@ -198,5 +199,84 @@ body {
   line-height: 28px;
 }
 
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#testimonials > p {
+  width: 122px;
+  height: 24px;
 
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--title-color)
+}
+
+#testimonials > h2 {
+  width: 435px;
+  height: 102px;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+}
+
+#list-testimonials {
+  display: flex;
+  gap: 15px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  width: 345px;
+  height: 334px;
+
+  background: #DEDCDB;
+  border-radius: 20px;
+}
+
+.testimonials > img {
+  margin-top: 32px;
+
+  width: 129px;
+  height: 130px;
+
+  border: 1px solid rgba(222, 320, 219, 1);
+  border-radius: 96.5px;
+}
+
+.name {
+  padding-top: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.opnion {
+  padding-top: 27px;
+  
+  width: 281px;
+
+  font-size: 14px;
+  line-height: 130%;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1065px;
+  height: 450.43px;
+
+  background: #DEDCDB;
+  border-radius: 20px;
+}
