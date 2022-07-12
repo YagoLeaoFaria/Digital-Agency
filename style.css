@@ -31,6 +31,17 @@ body {
   filter: blur(306px);
 }
 
+#ellipse-2 {
+  position: absolute;
+  width: 679px;
+  height: 679px;
+  left: calc(50% - 679px/2 - 818.5px);
+  top: 1231px;
+
+  background: rgba(142, 173, 213, 0.24);
+  filter: blur(306px);
+}
+
 .title {
   font-family: 'Inter', sans-serif;
   color: var(--title-color)
@@ -47,7 +58,7 @@ body {
   padding-top: 38px;
 }
 
-#logo {
+.logo {
   font-family: 'inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -150,7 +161,7 @@ body {
 #about {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 32px;
 }
 
@@ -178,7 +189,7 @@ body {
 #custome {
   padding-top: 136px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -269,14 +280,44 @@ body {
   line-height: 130%;
 }
 
-#contact {
+#contact { 
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
-  width: 1065px;
-  height: 450.43px;
+  margin: 150px;
+  margin-top: 135px;
 
-  background: #DEDCDB;
+  background-color: #DEDCDB;
   border-radius: 20px;
+}
+
+#contact > img {
+  margin-left: 75px;
+}
+
+#contact-id {
+  margin-top: 0px;
+  margin: 90px;
+}
+
+#contact-title {
+  width: 361px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+}
+
+#contact-text {
+  padding-top: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;  
+}
+
+#buttom2 {
+  margin-top: 32px;
 }
