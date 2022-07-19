@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -14,6 +18,8 @@ a {
 
 body {
   background: #F5F5F5;
+  
+  -webkit-font-smoothing: antialiased;
 }
 
 :root {
@@ -45,17 +51,29 @@ body {
 .title {
   font-family: 'Inter', sans-serif;
   color: var(--title-color)
+  -webkit-font-smoothing: auto;
 }
 
 .text {
   font-family: 'Inter', sans-serif;
 }
 
-#header {
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 38px;
+}
+
+nav .burger, .burger-rotate, .burger-lines {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+
+  transition: 0.2s;
 }
 
 .logo {
@@ -226,6 +244,7 @@ body {
 }
 
 #testimonials > h2 {
+  padding-top: 16px;
   width: 435px;
   height: 102px;
 
@@ -236,6 +255,7 @@ body {
 }
 
 #list-testimonials {
+  padding-top: 38px;
   display: flex;
   gap: 15px;
 }
@@ -321,3 +341,32 @@ body {
 #buttom2 {
   margin-top: 32px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 443px;
+  align-items: center;
+
+  background-color: #DEDCDB;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+footer > div > a {
+  display: flex;
+  gap: 240px;
+}
+
+footer > div > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+}
+
